@@ -22,4 +22,19 @@ class Piece {
     public int getSide() {
         return side;
     }
+    static String getShortNameFromPieceName (String name) {
+        String c = null;
+        switch (name) {
+            case "king":
+                c = "X";
+                break;
+            case "bishop":
+                c = "B";
+                break;
+            case "knight":
+                c = "K";
+                break;
+        }
+        return c;
+    }
 }

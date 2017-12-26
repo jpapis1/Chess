@@ -143,19 +143,9 @@ class Board {
         for(int i = 0; i<10; i++) {
             System.out.print(i + "  ");
             for(int j = 0; j<10; j++) {
+                String c;
                 try {
-                    char c = ' ';
-                    switch (board[j][i].getType()) {
-                        case "king":
-                            c = 'X';
-                            break;
-                        case "bishop":
-                            c = 'B';
-                            break;
-                        case "knight":
-                            c = 'K';
-                            break;
-                    }
+                    c = Piece.getShortNameFromPieceName(board[j][i].getType());
                     System.out.print("[" + c + "] ");
                     } catch (NullPointerException e) {
                         System.out.print("[ ] ");
