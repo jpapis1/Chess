@@ -26,9 +26,12 @@ class GUI extends JFrame {
             for(int j = 0; j<10; j++) {
                 if(board.getPiece(i,j) == null) {
                     buttons[i][j] = new JButton(" ");
+
                 } else {
                     buttons[i][j] = new JButton(Piece.getShortNameFromPieceName(board.getPiece(i,j).getType()));
                 }
+                jBoard.add(new JButton());
+
 
             }
         }
