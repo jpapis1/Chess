@@ -1,17 +1,9 @@
+// Autor Jacek Papis 2018
 package com.company;
-
-import javax.swing.*;
-
 class Main {
     public static void main(String[] args) {
-
-        Board board = new Board();
-        board.addToBoard(8,4,"knight",0);
-       // board.addToBoard(7,5,"bishop",0);
-        //board.addToBoard(5,2,"bishop",0);
-        board.print();
-        System.out.println(board.ableToMove(8,4,9,5));
-        JFrame f = new GUI();
+        //new GUI();
+        new StartWindow();
     }
 }
 
