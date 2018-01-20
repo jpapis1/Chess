@@ -1,5 +1,5 @@
 // Autor Jacek Papis 2018
-package com.company;
+package chess.mainComponents;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;

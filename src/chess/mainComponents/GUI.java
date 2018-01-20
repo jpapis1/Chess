@@ -1,5 +1,5 @@
 // Autor Jacek Papis 2018
-package com.company;
+package chess.mainComponents;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -101,7 +101,7 @@ class GUI extends JFrame {
                             if(board.getPiece(j,i).getSide()==1) {
                                 buttons[j][i].setIcon(new ImageIcon("images/pawnBlack.png"));
                             } else {
-                                buttons[j][i].setIcon(new ImageIcon("images/pawnWhite2.png"));
+                                buttons[j][i].setIcon(new ImageIcon("images/pawnWhite.png"));
                             }
                             break;
                         case "bishop":
@@ -160,7 +160,7 @@ class GUI extends JFrame {
                             }
                         }
                     }
-                    if (board.ableToMove(tempX, tempY, x, y)||board.ableToCapture(tempX,tempY,x,y)) {
+                    if (board.board[tempX][tempY].ableToMove(tempX, tempY, x, y,board)||board.board[tempX][tempY].ableToCapture(tempX,tempY,x,y,board)) {
                         buttons[tempX][tempY].setBackground(null);
                         buttons[tempX][tempY].setIcon(null);
                         for(int i = board.history.size()-1; i>board.index; i--) {

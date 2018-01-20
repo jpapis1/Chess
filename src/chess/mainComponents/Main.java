@@ -1,5 +1,5 @@
 // Autor Jacek Papis 2018
-package com.company;
+package chess.mainComponents;
 class Main {
     public static void main(String[] args) {
         //new GUI();
