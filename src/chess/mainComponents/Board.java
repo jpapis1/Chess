@@ -7,8 +7,6 @@ import chess.pieceTypes.Pawn;
 import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
-import static java.lang.Math.abs;
-
 public class Board implements Serializable, Cloneable {
     public int side;
     int index;

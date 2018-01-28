@@ -1,3 +1,4 @@
+// Autor Jacek Papis 2018
 package chess.pieceTypes;
 import chess.mainComponents.Piece;
 import chess.mainComponents.Board;
